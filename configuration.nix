@@ -27,7 +27,7 @@
     ./modules/searxng.nix
     ./modules/vscodium.nix
     ./modules/lab.nix
-     ./modules/git.nix
+    ./modules/git.nix
   ]
   ++ lib.optionals (hw_file != "thinkpad") [
     ./modules/desktop/nvidia.nix
