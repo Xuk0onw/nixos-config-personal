@@ -8,7 +8,6 @@
   else
     inputs.cachyos.legacyPackages.${pkgs.stdenv.hostPlatform.system}."linuxPackages-cachyos-bore-lto-zen4";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nix.extraOptions = ''access-tokens = github.com=${builtins.readFile /etc/nix/github-token}'';
   imports =
   [
     ./devices/${hw_file}.nix

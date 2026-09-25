@@ -58,6 +58,7 @@
     wineWow64Packages.stable
     qt6Packages.qtstyleplugin-kvantum
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.skwd-wall.packages.${pkgs.system}.default
     kdePackages.breeze-gtk
     kdePackages.breeze-icons
     adwaita-icon-theme

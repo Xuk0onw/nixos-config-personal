@@ -6,6 +6,7 @@
     qylock.url = "github:Darkkal44/qylock";
     cachyos.url = "github:xddxdd/nix-cachyos-kernel";
     noctalia.url = "github:noctalia-dev/noctalia/cachix";
+    skwd-wall.url = "github:liixini/skwd-wall";
 
     home-manager = {
       url = "github:nix-community/home-manager";
