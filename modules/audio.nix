@@ -1,7 +1,12 @@
 { pkgs, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    pulseaudio
+  ];
+
   hardware.alsa.enablePersistence = true;
+
   services.pipewire = {
     enable = true;
     pulse.enable = true;
@@ -20,9 +25,6 @@
       ExecStart = "${pkgs.alsa-utils}/bin/amixer -c Generic_1 sset Capture cap";
       RemainAfterExit = true;
     };
-    environment.systemPackages = with pkgs; [
-        pulseaudio
-      ];
 
     wantedBy = [ "default.target" ];
   };
