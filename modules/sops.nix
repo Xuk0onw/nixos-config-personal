@@ -3,7 +3,7 @@
 {
   sops.age.keyFile = "/home/xjle/.config/sops/age/keys.txt";
 
-  sops.defaultSopsFile = ../secrets/github.yaml;
+  sops.defaultSopsFile = ../keys/github.yaml;
 
   sops.secrets.github_token = {
     owner = "root";
