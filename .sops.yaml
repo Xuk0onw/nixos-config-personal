@@ -1,0 +1,8 @@
+keys:
+  - &xjle age1q099v56p87aaq5y4sg29677f8ry2tldcnum2865tqklf9vsdey7qq5u8t8
+
+creation_rules:
+  - path_regex: secrets/.*\.yaml$
+    key_groups:
+      - age:
+          - *xjle
