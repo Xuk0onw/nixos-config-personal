@@ -47,6 +47,8 @@
     yt-dlp
     jq
     eslint
+    age
+    sops
   ] ++ lib.optionals (hw_file == "nixos") [
     opentabletdriver
     mangohud

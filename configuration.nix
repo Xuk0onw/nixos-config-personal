@@ -26,6 +26,7 @@
     ./modules/vscodium.nix
     ./modules/lab.nix
     ./modules/git.nix
+    ./modules/sops.nix
   ]
   ++ lib.optionals (hw_file != "thinkpad") [
     ./modules/desktop/nvidia.nix
