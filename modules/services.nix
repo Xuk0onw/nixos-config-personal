@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 
 {
   hardware.bluetooth.enable = true;
@@ -14,6 +14,10 @@
   services.power-profiles-daemon.enable = false;
   services.fstrim.enable = true;
   services.acpid.enable = true;
+  services.xserver.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+  services.displayManager.defaultSession = lib.mkForce "plasma";
 
   services.pipewire = {
       enable = true;

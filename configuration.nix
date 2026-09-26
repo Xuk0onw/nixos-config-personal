@@ -16,7 +16,6 @@
     ./modules/programs.nix
     ./modules/services.nix
     ./modules/users.nix
-    ./modules/desktop.nix
     ./modules/wallpaperengine.nix
     ./modules/bluetooth.nix
     ./modules/font.nix
