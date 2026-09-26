@@ -7,6 +7,7 @@
     cachyos.url = "github:xddxdd/nix-cachyos-kernel";
     noctalia.url = "github:noctalia-dev/noctalia/cachix";
     skwd-wall.url = "github:liixini/skwd-wall";
+    sops-nix.url = "github:Mic92/sops-nix";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -40,7 +41,7 @@
         };
     };
 
-  outputs = { self, nixpkgs, nixvim, home-manager, mangowm, noctalia, qylock, openlogi, ... }@inputs: {
+  outputs = { self, nixpkgs, nixvim, home-manager, mangowm, noctalia, qylock, openlogi, sops-nix, ... }@inputs: {
     nixosConfigurations = {
 
       desktop = nixpkgs.lib.nixosSystem {
@@ -53,6 +54,7 @@
           mangowm.nixosModules.mango
           inputs.qylock.nixosModules.default
           openlogi.nixosModules.default
+          sops-nix.nixosModules.sops
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
