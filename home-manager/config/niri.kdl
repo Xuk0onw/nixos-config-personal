@@ -265,7 +265,7 @@ binds {
     Mod+Shift+W { spawn "helium"; }
     Mod+S { spawn "steam"; }
     Mod+Ctrl+W { toggle-column-tabbed-display; }
-    Alt+W hotkey-overlay-title="Skwd-wall" { spawn "skwd-wall-v2"; }
+    Mod+A hotkey-overlay-title="Skwd-wall" { spawn "skwd-wall-v2"; }
 
     Mod+D {
     spawn "sh" "-c" "pkill -x rofi || ~/.config/rofi/launchers/type-6/launcher.sh";
