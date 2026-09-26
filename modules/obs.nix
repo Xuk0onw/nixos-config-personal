@@ -14,7 +14,7 @@
       wlrobs
       obs-backgroundremoval
       obs-pipewire-audio-capture
-      obs-vaapi #optional AMD hardware acceleration
+      obs-vaapi
       obs-gstreamer
       obs-vkcapture
     ];
