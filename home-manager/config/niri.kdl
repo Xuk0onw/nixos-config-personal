@@ -86,6 +86,7 @@ layout {
     }
 }
 spawn-at-startup "noctalia"
+spawn-at-startup "skwd-walld"
 hotkey-overlay {
 				skip-at-startup
 }
