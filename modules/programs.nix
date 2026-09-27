@@ -49,6 +49,8 @@
     eslint
     age
     sops
+    gh
+    steamcmd
   ] ++ lib.optionals (hw_file == "nixos") [
     opentabletdriver
     mangohud

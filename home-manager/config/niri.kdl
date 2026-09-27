@@ -37,9 +37,14 @@ layer-rule {
 }
 
 layer-rule {
+    match namespace="^skwd-paper-backdrop$"
+    place-within-backdrop true
+}
+
+layer-rule {
     match namespace="^noctalia-(bar-.*|notification|dock|panel|attached-panel|osd)$"
     background-effect {
-    blur false
+        blur false
     }
 }
 
